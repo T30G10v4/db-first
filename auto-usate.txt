@@ -1,0 +1,24 @@
+auto-usate:
+
+
+id (INT PRIMARY_KEY AUTO_INCREMENT) // id univoco dell'auto
+
+marca (VARCHAR(30) NOTNULL) // marca dell'auto
+
+modello (varchar(50) NOTNULL) // modello dell'auto
+
+alimentazione(TINYINT NOTNULL) // tipo di alimentazione (0=benzina, 1=elettrica, ecc..)
+
+anno-produzione (YEAR NOTNULL) // anno di produzione del modello
+
+anno-immatricolazione (YEAR NOTNULL) // anno di prima immatricolazione del modello)
+
+km-percorsi (INT NOTNULL DEFAULT(0)) // chilomentri percorsi dall'auto
+
+costo-attuale (DECIMAL(7,2) NOTNULL) // prezzo attuale
+
+ultima-modifica (DATETIME) // data e ora ultima modifica record in db
+
+primo-inserimento (DATETIME NOTNULL) // data e ora dell'inserimento record in db
+
+costo-base (DECIMAL(7,2) NOTNULL) // prezzo di inserimento iniziale in db
